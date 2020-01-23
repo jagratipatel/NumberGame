@@ -19,6 +19,7 @@ class Container extends React.Component {
   }
 
 
+
   randomNoGenerator =()=> {
     let r = Math.floor(Math.random() * 100);
     return r;
