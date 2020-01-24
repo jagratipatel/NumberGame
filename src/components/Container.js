@@ -14,7 +14,7 @@ class Container extends React.Component {
       value2 : 0,
       value3 : 0,
       isCardVisible: false,
-      message: "failed"
+      message: ""
   }
  console.log("contructor chalo");
   }
