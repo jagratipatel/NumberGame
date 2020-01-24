@@ -5,9 +5,9 @@ class Card extends React.Component{
     render(){
         return( 
                 <div id="cards">
-                    {this.props.isCardVisible ? (<div className="card">{this.props.value1}</div>) :(<div className="card" onClick={this.props.setVisibility(1)}></div>)}
-                    {this.props.isCardVisible ? (<div className="card">{this.props.value2}</div>) :(<div className="card" onClick={this.props.setVisibility(2)}></div>)}
-                    {this.props.isCardVisible ? (<div className="card">{this.props.value3}</div>) :(<div className="card" onClick={this.props.setVisibility(3)}></div>)}
+                    {this.props.isCardVisible ? (<button className="card">{this.props.value1}</button>) :(<button className="card" onClick= {()=>{this.props.setVisibility(1)}}></button>)}
+                    {this.props.isCardVisible ? (<button className="card">{this.props.value2}</button>) :(<button className="card" onClick= {()=>{this.props.setVisibility(2)}}></button>)}
+                    {this.props.isCardVisible ? (<button className="card">{this.props.value3}</button>) :(<button className="card" onClick= {()=>{this.props.setVisibility(3)}}></button>)}
                 </div>
             )
 
